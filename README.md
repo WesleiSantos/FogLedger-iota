@@ -38,12 +38,6 @@ sudo pip install -U git+https://github.com/larsid/FogLedger.git
 
 ## Preparing Blockchain Test
 
-## Run example indy
-
-```
-cd examples/indy
-```
-
 ## Run example iota
 
 ```
@@ -60,48 +54,6 @@ sudo python3 test-local-network.py
 
 ```
 sudo python3 test-distributed-network.py
-```
-
-## Example: A local network with four nodes
-
-```python
-from typing import List
-from fogbed import (setLogLevel, FogbedDistributedExperiment)
-import time
-import os
-
-from fogledger.indy import (IndyBasic, Node)
-setLogLevel('info')
-
-
-if (__name__ == '__main__'):
-
-    exp = FogbedDistributedExperiment()
-    worker1 = exp.add_worker('YOUR_HOST_IP or HOST_NAME')
-
-    # Define Indy network in cloud
-    indyCloud = IndyBasic(
-        exp=exp, trustees_path='examples/tmp/trustees.csv',  config_nodes=[
-            Node(name='ledger1'),
-            Node(name='ledger2'),
-            Node(name='ledger3'),
-            Node(name='ledger4'),
-        ])
-
-    for ledger in indyCloud.ledgers:
-        worker1.add(ledger)
-        worker1.add_link(edge1, ledger)
-
-    try:
-        exp.start()
-        indyCloud.start_network()
-        input('Press any key...')
-    except Exception as ex:
-        print(ex)
-    finally:
-        exp.stop()
-
-
 ```
 
 ## Example: A local network with four nodes

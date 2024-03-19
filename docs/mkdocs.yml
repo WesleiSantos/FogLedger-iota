@@ -1,4 +1,4 @@
-site_name: FogLedger
+site_name: FogLedger-Iota
 
 theme:
   name: material
@@ -23,8 +23,8 @@ theme:
     - content.code.copy
   language: en
 
-repo_name: larsid/fogledger
-repo_url: https://github.com/larsid/fogledger/
+repo_name: larsid/FogLedger-Iota
+repo_url: https://github.com/larsid/FogLedger-Iota/
 edit_uri: ""
 
 extra:
@@ -33,12 +33,12 @@ extra:
 
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/matheusnascimentoti99
+      link: https://github.com/WesleiSantos
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/matheus-nascimento-322a0b181/
+      link: https://www.linkedin.com/in/weslei-santos-8858bb173/
 
 copyright: |
-  &copy; 2023 <a href="https://github.com/larsid/fogledger/"  target="_blank" rel="noopener">LARSID</a>
+  &copy; 2023 <a href="https://github.com/larsid/FogLedger-Iota/"  target="_blank" rel="noopener">LARSID</a>
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -62,11 +62,4 @@ nav:
   - Getting started: 'quickstart.md'
 
   - DLTs:
-    - Hyperledger Indy:
-      - Emulation:
-        - Local Emulation: 'indy/examples/test-local-network.md'
-        - Using Webserver: 'indy/examples/test-local-webserver-network.md'
-        - Distributed Emulation: 'indy/examples/test-distributed-network.md'
-      - Resources:
-        - Webserver: 'indy/resources/webserver.md'
     - IOTA Tangle: 'iota/README.md'
