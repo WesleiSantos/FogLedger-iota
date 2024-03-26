@@ -31,7 +31,7 @@ RUN npm install -g npm@8.8.0
 WORKDIR /app
 
 RUN git clone --depth 1 --branch dev https://github.com/iotaledger/explorer.git explorer
-RUN mv -i explorer/client/.eslintrc.js /app/
+RUN mv -i explorer/client/.eslintrc.yaml /app/
 RUN mv -i explorer/client/.eslintignore /app/
 RUN mv -i explorer/client/.dockerignore /app/
 RUN mv -i explorer/client/.env /app/
