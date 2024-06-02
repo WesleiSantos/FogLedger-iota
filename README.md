@@ -31,7 +31,7 @@ sudo pip install -U git+https://github.com/EsauM10/fogbed.git
 #### 3. Install FogLedger
 
 ```
-sudo pip install -U git+https://github.com/larsid/FogLedger.git
+sudo pip install fogbed
 ```
 
 ## Get Started
