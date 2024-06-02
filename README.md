@@ -25,13 +25,13 @@ sudo ansible-playbook -i "localhost," -c local containernet/ansible/install.yml
 #### 2. Install Fogbed
 
 ```
-sudo pip install -U git+https://github.com/EsauM10/fogbed.git
+sudo pip install fogbed
 ```
 
 #### 3. Install FogLedger
 
 ```
-sudo pip install fogbed
+sudo pip install -U git+https://github.com/larsid/FogLedger-Iota.git
 ```
 
 ## Get Started
