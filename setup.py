@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="fogLedgerIota",
-    version="1.0.2",
+    version="1.0.3",
     description='Plugin to build DLTs in Fogbed.',
     long_description='Plugin to build DLT in Fogbed. Suport IOTA. \
         The FogLedger is a plugin for [Fogbed](https://github.com/larsid/FogLedger-Iota). It allows you to emulate a fog network with distributed ledgers. \
@@ -27,5 +27,5 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    package_data={'fogLedgerIota': ['iota/data/*.sh', 'iota/data/*.json']}
+    package_data={'fogledgerIota': ['iota/data/*.sh', 'iota/data/*.json']}
 )
